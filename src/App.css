@@ -87,6 +87,19 @@ label {
   padding-bottom: 40px;
 }
 
+.switch.off {
+  background-image: url('public/images/uncheck-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.switch.on {
+  background-image: url('public/images/check-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
 /*input[type='checkbox'] {
     -webkit-appearance:none;
     width:20px;

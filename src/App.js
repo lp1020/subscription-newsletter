@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ReactDOM from "react-dom";
 import Header from "./components/Header";
 import NewsletterList from './components/NewsletterList';
 import Subscribe from './components/Subscribe';

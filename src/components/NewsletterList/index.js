@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
+import React, { useState, Component } from "react";
+
+const [toggleState, setToggleState] = useState("off");
+ function toggle() {
+    setToggleState(toggleState === "off" ? "on" : "off");
+  }
 
 class NewsletterList extends Component {
+
 
 
     render() {
         return (
           <div className="container">
 
-        	<div className="row newsletter-row">
+          <div className="row newsletter-row">
 
 
           <div className="col-md-3 col-sm-12">
@@ -18,7 +24,7 @@ class NewsletterList extends Component {
           <p className="newsletter-desc">The MPA comes with three different sizes of foam and silicone tips and a carrying pouch.</p>
           </div>
           <div className="col-lg-2 col-sm-12">
-          <img src="images/uncheck-icon.png" className="uncheck-icon img-fluid"/>
+          <div className={`switch ${toggleState}`} onClick={toggle} />
           </div>
           </div>
 
@@ -62,7 +68,7 @@ class NewsletterList extends Component {
           </div>
           </div>
           </div>
-        	);
+          );
     }
 
 }
