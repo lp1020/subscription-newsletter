@@ -8,7 +8,7 @@ import Subscribe from './components/Subscribe';
 function App() {
   return (
     <div className={"container"}>
-    <h1>Hello!</h1>
+
     <Header/>
      <NewsletterList/>
       <Subscribe/>
